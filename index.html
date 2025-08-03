@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Убушаев Шавкат - Веб-разработчик</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">AP</div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Главная</a></li>
+                <li><a href="#about" class="nav__link">Обо мне</a></li>
+                <li><a href="#projects" class="nav__link">Проекты</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Привет, я <span class="hero__highlight">Убушаев Шавкат</span>
+                </h1>
+                <p class="hero__subtitle">Веб-разработчик, использующий ИИ для создания современных сайтов и приложений</p>
+                <div class="hero__buttons">
+                    <button class="btn btn--primary" onclick="scrollToSection('projects')">
+                        Посмотреть работы
+                    </button>
+                    <button class="btn btn--secondary" onclick="scrollToSection('contact')">
+                        Связаться
+                    </button>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__shape"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>Я веб-разработчик, использующий искусственный интеллект для создания сайтов и веб-приложений. Это позволяет мне работать быстрее, дешевле и создавать более качественные продукты.</p>
+                        <div class="skills">
+                            <h3>Преимущества ИИ-разработки:</h3>
+                            <div class="skills__list">
+                                                                 <span class="skill">⚡ В 3-5 раз быстрее классической разработки</span>
+                                <span class="skill">💰 Экономия до 70%</span>
+                                <span class="skill">🎯 Точность и качество</span>
+                                <span class="skill">🔄 Быстрые правки</span>
+                                <span class="skill">📱 Адаптивность</span>
+                                <span class="skill">🚀 Современные технологии</span>
+                            </div>
+                        </div>
+                    </div>
+                                                                                   <div class="about__stats">
+                                                   <div class="stat">
+                                                               <div class="stat__number">3–5</div>
+                               <div class="stat__label">В разы быстрее</div>
+                           </div>
+                        <div class="stat">
+                            <div class="stat__number">70%</div>
+                            <div class="stat__label">Экономия бюджета</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__number">100%</div>
+                            <div class="stat__label">Довольных клиентов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Мои проекты</h2>
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder project-card__placeholder--ai"></div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-commerce платформа</h3>
+                            <p class="project-card__description">Современный интернет-магазин с ИИ-рекомендациями товаров и умной корзиной</p>
+                            <div class="project-card__tags">
+                                <span class="tag">🤖 ИИ-рекомендации</span>
+                                <span class="tag">💳 Умная оплата</span>
+                                <span class="tag">📊 Аналитика</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder project-card__placeholder--ai"></div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Умная CRM система</h3>
+                            <p class="project-card__description">CRM с ИИ-аналитикой, предсказанием продаж и автоматизацией процессов</p>
+                            <div class="project-card__tags">
+                                <span class="tag">🧠 ИИ-аналитика</span>
+                                <span class="tag">📈 Прогнозы</span>
+                                <span class="tag">⚡ Автоматизация</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder project-card__placeholder--ai"></div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">ИИ-генератор контента</h3>
+                            <p class="project-card__description">Веб-приложение для автоматического создания текстов, изображений и видео</p>
+                            <div class="project-card__tags">
+                                <span class="tag">✍️ Генерация текста</span>
+                                <span class="tag">🎨 Создание изображений</span>
+                                <span class="tag">🎬 Видео-контент</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Связаться со мной</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3>Давайте обсудим ваш проект</h3>
+                        <p>Готов помочь воплотить ваши идеи в жизнь. Свяжитесь со мной любым удобным способом.</p>
+                        <div class="contact__methods">
+                            <a href="mailto:shavkat@example.com" class="contact__method">
+                                <span class="contact__icon">📧</span>
+                                shavkat@example.com
+                            </a>
+                            <a href="tel:+79001234567" class="contact__method">
+                                <span class="contact__icon">📱</span>
+                                +7 (900) 123-45-67
+                            </a>
+                            <a href="https://t.me/shavkatdev" class="contact__method">
+                                <span class="contact__icon">💬</span>
+                                @shavkatdev
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" class="form__input" placeholder="Email" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea id="message" name="message" class="form__textarea" placeholder="Сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Убушаев Шавкат. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
